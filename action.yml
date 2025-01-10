@@ -80,7 +80,7 @@ runs:
 
     # Iterate over the IDs and delete each one
     - name: Delete packages by ids
-      if: ${{ env.GH_package_ids != "" }}
+      if: ${{ env.GH_package_ids != '' }}
       shell: bash
       run: |
         for id in $GH_package_ids; do
