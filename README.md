@@ -13,7 +13,7 @@ Action creates and pushes a dummy Docker image to the registry with a given tag 
 # Usage
 
 ```yaml
-- uses: rafalkk/remove-dockertag-action@v1
+- uses: voidfant/remove-dockertag-action@v1
   with:
     # Name of the Docker tag to delete.
     # (required)
@@ -61,7 +61,7 @@ jobs:
 
     steps:
     - name: Remove Docker Tag
-      uses: rafalkk/remove-dockertag-action@v1
+      uses: voidfant/remove-dockertag-action@v1
       with:
         tag_name: main
         github_token: ${{ secrets.GITHUB_TOKEN }}
